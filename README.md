@@ -74,6 +74,9 @@ int main()
 }
 
 ```
+## week02
+## 第一題
+
 ```c
 #include <stdio.h>
 int main()
@@ -87,6 +90,7 @@ int main()
 
 }
 ```
+## 第二題
 ```c
 #include <stdio.h>
 int main()
@@ -105,6 +109,7 @@ int main()
 }
 
 ```
+## 第三題
 ```c
 #include <stdio.h>
 int main()
