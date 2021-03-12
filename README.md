@@ -131,7 +131,7 @@ int main()
     printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
 }
 ```
-## 讀入整數反序列印
+## 1. 讀入整數反序列印
 ```c
 #include <stdio.h>
 int a[1000];
@@ -151,7 +151,7 @@ int main()
 	printf("\n");
 }
 ```
-## A的B次方函數
+## 2. A的B次方函數
 ```c
 #include <stdio.h>
 int MYPOWER(int a,int b)
@@ -171,7 +171,7 @@ int main(void)
 	return 0;
 }
 ```
-## 漸增數列相加
+## 3. 漸增數列相加
 ```c
 #include <stdio.h>
 int main()
@@ -181,7 +181,7 @@ int main()
 	printf("%d\n",(n*n-1)*n/3);
 }
 ```
-## 判別正方形
+## 4. 判別正方形
 ```c
 #include <stdio.h>
 int main()
@@ -196,7 +196,7 @@ int main()
 	}
 } 
 ```
-## 2進位轉10進位 
+## 5. 2進位轉10進位 
 ```c
 #include <stdio.h>
 int main()
@@ -206,7 +206,7 @@ int main()
 	printf("%d\n",(a/1000)*8+a%1000/100*4+a%100/10*2+a%10*1);
 }
 ```
-## 均標與前標計算
+## 6. 均標與前標計算
 ```c
 #include <stdio.h>
 int main()
