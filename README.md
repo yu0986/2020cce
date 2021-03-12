@@ -131,6 +131,7 @@ int main()
     printf("n[0]:%d n[1]:%d n[2]:%d\n",n[0],n[1],n[2]);
 }
 ```
+## 實習課
 ## 1. 讀入整數反序列印
 ```c
 #include <stdio.h>
@@ -307,6 +308,110 @@ int main()
     int *p=(int*) malloc(sizef(int)*10);
 
     return 0;
+}
+
+```
+## 實習課
+## 1. 計算陣列的平方值
+```c
+#include <stdio.h>
+int main()
+{
+	int n,a[10];
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		scanf("%d",&a[i]);
+		
+		printf("%d,",a[i]*a[i]);
+	}
+	printf("\n");
+}
+```
+## 2. 大小寫轉換 
+```c
+#include <stdio.h>
+int main()
+{
+	char c[10];
+	scanf("%s",&c);
+	int i=0;
+	while(c[i]!='\0'){
+		if(c[i]>='A' && c[i]<='Z'){
+			printf("%c",c[i]-'A'+'a');
+		}
+		else if(c[i]>='a' && c[i]<='z'){
+			printf("%c",c[i]-'a'+'A');
+		}
+		else {printf("%c",c[i]);}
+		i++;
+	}
+	printf("\n");
+}
+```
+## 3. 計算幾週與幾天
+```c
+#include <stdio.h>
+int main()
+{
+	int d;
+	scanf("%d",&d);
+	printf("%d %d\n",d/7,d%7);
+}
+
+```
+## 4. 計程車資計算
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if((n-2000)/500==0)
+		printf("%d\n",100+((n-2000)/500)*5);
+	else
+		printf("%d\n",100+((n-2000)/500)*5+5);
+}
+```
+## 5. 兩數間可被5整除的整數
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	if(a<b){
+		for(int i=a;i<=b;i++){
+			if(i%5==0)
+				printf("%d\n",i);
+		}
+	}
+	else{
+		for(int i=b;i<=a;i++){
+				if(i%5==0)
+					printf("%d\n",i);
+		}
+	}
+}
+```
+## 6. 整數間最大距離
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b&&b>c)
+		printf("%d\n",a-c);
+	else if(b>a&&a>c)
+		printf("%d\n",b-c);
+	else if(c>a&&a>b)
+		printf("%d\n",c-b);
+	else if(c>b&&b>a)
+		printf("%d\n",c-a);
+	else if(a>c&&c>b)
+		printf("%d\n",a-b);
+	else if(b>c&&c>a)
+		printf("%d\n",b-a);
 }
 
 ```
