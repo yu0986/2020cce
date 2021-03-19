@@ -511,3 +511,140 @@ int main()
 }
 
 ```
+
+## 實習課
+## 除惡務盡(除2)
+```c
+#include <stdio.h>
+int main()
+{
+	char a[100];
+	scanf("%s",&a);
+	int i=0;
+	while(a[i]!='\0'){
+		if(a[i]!='2')
+			printf("%c",a[i]);
+		i++;
+	}
+	printf("\n");
+}
+```
+## 擲骰統計 
+```c
+#include <stdio.h>
+int main()
+{
+	char count[7]={0};
+	char a[100];
+	int i=0;
+	scanf("%s",&a);
+	
+	while(a[i]!='\0'){
+		count[a[i]-'0']++;
+		i++;
+	}
+	for(i=1;i<=6;i++){
+		printf("%d:%d\n",i,count[i]);
+	}
+}
+```
+## 函數找整數的最大數字
+```c
+#include<iostream>
+using namespace std;
+int max_digit(int n)
+{
+	int max;//紀錄最大值
+	max=n%10;//n的個位數
+	while(n>0){
+		if((n%10)>max) max=n%10;
+		n/=10;
+	}
+		return max;
+}
+int main(){
+  int n;cin>>n;
+  cout<<"["<<max_digit(n)<<"]";
+  return 0;
+}
+/* 上方C++ 的 main 函數 等價於 下方 C 的 main 函數
+int main(void){
+  int n;
+  scanf("%d", &n);
+  printf("[%d]", max_digit(n));
+  return 0;
+}
+*/
+```
+## 星星等腰三角
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){  //控制行數
+		for(int j=0;j<n-i;j++){	//印空格
+			printf(" ");
+		}
+		for(int k=0;k<i*2-1;k++){	//印 *
+			printf("*");
+		}
+		printf("\n");
+	}
+}
+
+```
+## 分開整數的每個數字 
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d   %d   %d   %d   %d",n/10000,n%10000/1000,n%10000%1000/100,n%10000%1000%100/10,n%10000%1000%100%10/1);
+}
+```
+## 字元判別 
+```c
+#include <stdio.h>
+int main()
+{
+	char c;
+	scanf("%c",&c);
+	if(c>='a'&&c<='z'){
+		printf("L");
+	}
+	else if(c>='A'&&c<='Z'){
+		printf("U");
+	}
+	else if(c>='0'&&c<'9'){
+		printf("D");
+	}
+	else printf("O");
+}
+
+```
+## 數字之首
+```c
+include <stdio.h>
+int main()
+{
+	char c;
+	scanf("%c",&c);
+	printf("%c",c);
+}
+```
+## 輸出從0到N的偶數
+```c
+include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		if(i%2==0)
+			printf("%d ",i);
+	}
+}
+```
