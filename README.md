@@ -744,3 +744,78 @@ int main()
 	}
 }
 ```
+## 實習課
+## 反序數字
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b=0,n1;
+	scanf("%d",&a);
+	a=n1;
+	while(a!=0){
+		b=b*10+a%10;
+		a=a/10;
+	}
+	printf("%d+%d=%d\n",n1,b,n1+b);
+}
+```
+## 絕對值函數
+```c
+#include <stdio.h>
+int f(int a)
+{
+	if(a>0) return a;
+	else return a*(-1);
+}
+
+int main(void)
+{
+	int n;
+	scanf("%d",&n);
+	printf("[%d]",f(n));
+	return 0;
+}
+```
+## N數之和
+```c
+#include <stdio.h>
+int main()
+{
+	int c,n,sum=0;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		scanf("%d",&c);
+		sum=sum+c;
+	}
+		printf("%d\n",sum);
+}
+
+
+```
+## 三數極大 
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,c,max;
+	scanf("%d%d%d",&a,&b,&c);
+	max=a;
+	if(b>a&&b>c)
+		max=b;
+	if(c>a&&c>b)
+		max=c;
+	printf("%d\n",max);
+}
+
+```
+## 計算商數 
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("%d\n",a/b);
+}
+```
