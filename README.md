@@ -419,6 +419,7 @@ int main()
 ## week4
 ## 上課內容
 ## 第一題
+struct 結構的宣告、定義、初始化、印出來
 ```c
 #include <stdio.h>
 
@@ -431,6 +432,7 @@ int main()
 }
 ```
 ## 第二題
+示範結構的值如何設值 (在 C 要分開慢慢設)
 ```c
 #include <stdio.h>
 
@@ -447,6 +449,7 @@ int main()
 
 ```
 ## 第三題
+struct結構 宣告的結構變數 (global, local), 整個結構設值assignment
 ```c
 #include <stdio.h>
 
@@ -467,6 +470,7 @@ int main()
 
 ```
 ## 第四題
+結構陣列 (array of a struct), 同時配合指標, 指到對應的格子, 方便理解
 ```c
 #include <stdio.h>
 struct  DATA{
@@ -489,6 +493,7 @@ int main()
 
 ```
 ## 第五題
+結構陣列 (array of a struct), 同時配合結構的指標, 利用 p->x 取出值, 再看 p++ 的移動範圍
 ```c
 #include <stdio.h>
 
