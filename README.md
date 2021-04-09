@@ -680,7 +680,7 @@ int main()
     printf("%s\n",line4);
 }
 
-```'
+```
 ## 第三題
 ```c
 #include <stdio.h>
