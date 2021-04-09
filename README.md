@@ -857,3 +857,140 @@ int main()
 	}//Output
 }
 ```
+## 實習課
+## 迴文判斷
+```c
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[9999];
+	int i,len;
+	scanf("%s",&a);
+	len=strlen(a);//strlen可取得字串長度
+	for(i=0;i<(len/2);i++){
+		if(a[i]!=a[len-1-i]) break;
+	}
+	if(i==(len/2)) printf("YES\n");
+	else printf("NO\n");
+}
+```
+## 函數反序排列數字
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b=0;
+	scanf("%d",&a);
+	while(a!=0){
+		b=b*10+a%10;
+		a=a/10;
+	}
+	printf("%d\n",b);
+}
+```
+## 陣列找出現次數 
+```c
+#include <stdio.h>
+int main()
+{
+	char a[100];
+	int count=0,i,n;
+	for(i=0;i<100;i++){
+		scanf("%d",&a[i]);
+			if(a[i]==0) break;
+			n++;
+	}
+	int x;
+	scanf("%d",&x);//找X在數列中出現的次數
+	n=i;// 紀錄陣列個數
+	for(int i=0;i<n;i++){
+		if(a[i]==x) count++;
+	}
+	printf("%d\n",count);
+}
+
+```
+## 判斷大小 
+```c
+#include <stdio.h>
+int f(int a,int b){
+	if(a<b)return -1;
+	if(a==b)return 0;
+	if(a>b)return 1;
+}
+int main(){
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d",f(a,b));
+    return 0;
+}
+
+```
+## 計算一列整數的總和 
+```c
+#include <stdio.h>
+int main()
+{
+	int sum=0,a;
+	while(a!=999){//999是終止條件
+		printf("Enter an integer ( 999 to end ): \n");
+		scanf("%d",&a);//a=999
+		sum+=a;
+	}
+	printf("The total is: %d",sum-999);
+}
+```
+## 計算餘數 
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("%d",a%b);
+
+}
+
+```
+## 整數轉換等級 
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if(n>90)
+		printf("A");
+	else if(n<90&&n>=80)
+		printf("B");
+	else if(n<80&&n>=70)
+		printf("C");
+	else if(n<70&&n>=60)
+		printf("D");
+	else if(n<60)
+		printf("F");
+}
+```
+## 計程車資計算 
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if((n-1500)/250<=0)
+		printf("%d",100+(n-1500)/250*5+5);
+	else printf("%d",100+(n-1500)/250*5+5);
+}
+```
+## 找零錢 
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d=50*%d+10*%d+5*%d+1*%d",n,n/50,n%50/10,n%50%10/5,n%50%10%5/1);
+}
+```
