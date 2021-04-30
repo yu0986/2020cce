@@ -1075,5 +1075,4 @@ int main()
 		printf("%.4f\n",100*ans/(float)N);//最後收尾
 	}
 }
-
 ```c
