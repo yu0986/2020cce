@@ -1032,7 +1032,7 @@ int main()
 ## week10
 ## 上課內容
 ## UVA10226
-```
+```c
 #include <stdio.h>
 #include <string.h>//strcmp() strcpy()
 #include <stdlib.h>//qsort()
@@ -1075,4 +1075,4 @@ int main()
 		printf("%.4f\n",100*ans/(float)N);//最後收尾
 	}
 }
-```c
+```
