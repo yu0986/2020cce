@@ -1076,3 +1076,148 @@ int main()
 	}
 }
 ```
+## 實習課
+## 最大公因數gcd 
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,min,ans=1;
+	printf("Enter two integers: \n");
+	scanf("%d%d",&a,&b);
+	if(a>b) min=b;
+	else min=a;
+	for(int i=2;i<=min;i++){
+		if(a%i==0 && b%i==0) ans=i;//i是因數
+	}//迴圈跑完ans儲存的值就是最大公因數
+	printf("The greatest common divisor of %d and %d is %d\n",a,b,ans);
+}
+
+```
+## 字串長度 
+```c
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[100],b[100];
+	scanf("%s%s",&a,&b);
+	int lena=strlen(a);//字串a的長度
+	int lenb=strlen(b);//字串b的長度
+	if(lena>lenb) printf("1");//a>b
+	else if (lenb>lena) printf("-1");//b>a
+	else //2字串長度相等
+	{printf("%d",strcmp(a,b));}
+}
+
+```
+## 函數判斷質數
+```c
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int prime(int n)
+{
+	int a=0,b=1;
+	for(int i=1;i<=n;i++){
+		if(n%i==0)a++;
+	}
+	if(a==2)b=1;
+		else b=0;
+		return b;
+}
+int main(){
+  int n;cin>>n;
+  cout<<"["<<prime(n)<<"]";
+  return 0;
+}
+/* 上方 C++ 的 main 函數 等價於 下方 C 的 main 函數
+int main(void){
+    int n;
+    scanf("%d", &n);
+    printf("[%d]", prime(n));
+    return 0;
+}
+*/
+```
+## 判斷迴文
+```c
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[80];
+	int i,len;
+	scanf("%s",&a);
+	len=strlen(a);
+	for(i=0;i<(len/2);i++){
+		if(a[i]!=a[len-1-i])break;
+	}
+	if(i==(len/2))printf("YES");
+	else printf("NO");
+}
+
+```
+## 計算餘數及列印
+```c
+#include <stdio.h>
+int main()
+{
+	int x,y;
+	printf("Enter two numbers: ");
+	scanf("%d%d",&x,&y);
+	printf("The remainder is %d\n",x%y);
+}
+
+```
+## 判別正方形 
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	if(a==b)
+		printf("Enter two numbers:  It is a square ");
+	else printf("Enter two numbers:  It is not a square ");
+}
+
+```
+## 將一連串整數相乘 
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,ans=1;
+	printf("Enter the number of values to be processed: ");
+	scanf("%d",&a);//a為數列個數
+	for(int i=0;i<a;i++){
+		printf("Enter a value: ");
+		scanf("%d",&b);
+		ans*=b;//ans=ans*b;
+	}
+	printf("Product of the %d values is %d",a,ans);
+}
+
+```
+## 平年月份的天數
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if(n==2)
+		printf("28");
+	else if(n%2==1 && n<9)
+		printf("31");
+	else if(n%2==0 && n>=8)
+		printf("31");
+	else if(n%2==1 && n>=9)
+		printf("30");
+	else if(n%2==0 && n<9)
+		printf("30");
+
+}
+
+```
