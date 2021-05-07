@@ -1389,7 +1389,6 @@ int main()
 
 ```
 ## 幾日為星期幾 
-## 法1
 ```c
 #include <stdio.h>
 int main()
