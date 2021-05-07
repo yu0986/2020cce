@@ -1361,7 +1361,7 @@ int main()
 ```
 ## 兩數間可被7整除的數
 ```c
-include <stdio.h>
+#include <stdio.h>
 int main()
 {
 	int a,b;
