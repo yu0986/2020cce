@@ -1,7 +1,7 @@
 #include <stdio.h>
 struct data{
-    int ans;///¦³´X­Ó
-    char c;///¦r¥À
+    int ans;///Â¦Â³Â´XÂ­Ã“
+    char c;///Â¦rÂ¥Ã€
 };
 struct data box;
 int main()
