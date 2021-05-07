@@ -1324,3 +1324,100 @@ int main()
 }
 
 ```
+## 實習課
+## 字串中的數字個數 
+```c
+#include <stdio.h>
+int main()
+{
+	int sum=0,i=0;
+	char c[80];
+	scanf("%s",c);
+	while(c[i]!='\0'){
+	if(c[i]>='0'&&c[i]<='9')sum++;
+		i++;
+	}
+	printf("%d",sum);
+}
+
+```
+## 利用自訂函式最大值max與最小值min求出兩者之差
+```c
+
+```
+## 奇數之和 
+```c
+#include <stdio.h>
+int main()
+{
+	int n,sum=0;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+		if(i%2==1)sum+=i;
+	}
+	printf("%d",sum);
+}
+
+```
+## 兩數間可被7整除的數
+```c
+include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	for(int i=a;i<=b;i++){
+		if(i%7==0)
+		printf("%d ",i);
+	}
+
+}
+```
+## 整數二元四則運算 
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	char c;
+	scanf("%d %c %d",&a,&c,&b);
+	if(c=='+')printf("%d",a+b);
+	if(c=='-')printf("%d",a-b);
+	if(c=='*')printf("%d",a*b);
+	if(c=='/')printf("%d",a/b);
+}
+
+```
+## 幾日為星期幾 
+## 法1
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d",(n-1)%7);
+}
+
+
+```
+## 零錢總額
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	printf("%d",50*a+5*b+1*c);
+}
+```
+## 兩數平方差
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("%d",a*a-b*b);
+}
+```
