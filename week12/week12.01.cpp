@@ -10,22 +10,22 @@ int main()
 		for(int i=0;line[i]!=0;i++){
 			char c=line[i];
 			ans[c]++;
-		}///Step03:¦r¦êªºfor°j°é
-		for(int i=0;i<256;i++){//¥ª¤âi //±Æ§Ç
-			for(int j=i+1;j<256;j++){//¥k¤â
+		}///Step03:Â¦rÂ¦ÃªÂªÂºforÂ°jÂ°Ã©
+		for(int i=0;i<256;i++){//Â¥ÂªÂ¤Ã¢i //Â±Ã†Â§Ã‡
+			for(int j=i+1;j<256;j++){//Â¥kÂ¤Ã¢
 				if(ans[i]>ans[j]){
-				int temp=ans[i];//¥æ´«ans[]
+				int temp=ans[i];//Â¥Ã¦Â´Â«ans[]
 				ans[i]=ans[j];
 				ans[j]=temp;
-				char t=c[i];//¥æ´«¦r¥À
+				char t=c[i];//Â¥Ã¦Â´Â«Â¦rÂ¥Ã€
 				c[i]=c[j];
 				c[j]=t;
 				}
 				if(ans[i]==ans[j] && c[i]<c[j]){
-				int temp=ans[i];//¥æ´«ans[]
+				int temp=ans[i];//Â¥Ã¦Â´Â«ans[]
 				ans[i]=ans[j];
 				ans[j]=temp;
-				char t=c[i];//¥æ´«¦r¥À
+				char t=c[i];//Â¥Ã¦Â´Â«Â¦rÂ¥Ã€
 				c[i]=c[j];
 				c[j]=t;
 				}
