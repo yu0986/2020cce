@@ -1453,6 +1453,7 @@ int main()
 ```
 ## week12
 ## 上課內容
+## uva 10062
 ```c
 #include <stdio.h>
 char line[2000];
