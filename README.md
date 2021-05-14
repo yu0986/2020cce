@@ -1526,3 +1526,46 @@ int main()
 	}
 }
 ```
+## 實習課
+## 數字個數
+```c
+
+```
+## 剩餘啤酒有幾手又幾瓶
+```c
+
+```
+## 三數最小 
+## 法1
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,c,min;
+	scanf("%d%d%d",&a,&b,&c);
+	min=a;
+	if(b<a && b<c)
+		min=b;
+	if(c<a && c<b)
+		min=c;
+	printf("%d\n",min);
+}
+```
+## 法二
+```c
+#include <stdio.h>
+int min(int a,int b,int c)
+{
+	int ans=a;
+	if(ans>b)ans=b;
+	if(ans>c)ans=c;
+	return ans;
+}
+int main()
+{
+	int x,y,z;
+	scanf("%d%d%d",&x,&y,&z);
+	printf("%d\n",min(x,y,z));
+}
+```
+## 
