@@ -1529,11 +1529,25 @@ int main()
 ## 實習課
 ## 數字個數
 ```c
-
+#include <stdio.h>
+int main()
+{
+	int a,ans=0;
+	while(scanf("%d",&a)!=EOF){//End of File
+		ans++;
+	}
+	printf("%d",ans-1);//因為最後一個是0
+}
 ```
 ## 剩餘啤酒有幾手又幾瓶
 ```c
-
+#include <stdio.h>
+int main()
+{
+	int p,d;
+	scanf("%d%d",&p,&d);
+	printf("%d %d",(p-d*6)/6,(p-d*6)%6);
+}
 ```
 ## 三數最小 
 ## 法1
@@ -1568,4 +1582,36 @@ int main()
 	printf("%d\n",min(x,y,z));
 }
 ```
-## 
+## 計算立方值 
+```c
+#include <stdio.h>
+int main()
+{
+	int a,b,c,d,e,f;
+	scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+	printf("%d\n%d\n%d\n%d\n%d\n%d\n",a*a*a,b*b*b,c*c*c,d*d*d,e*e*e,f*f*f);
+}
+```
+## 判斷平方數 
+```c
+
+```
+## 計算質數個數
+```c
+
+```
+## 三數組合 
+```c
+
+```
+## 找千位數
+```c
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d",n%10000/1000);
+}
+
+```
