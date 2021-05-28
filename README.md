@@ -1827,3 +1827,110 @@ int main()
 	printf("%d",sum);
 }
 ```
+## week14
+## 上課內容
+## 第五題(滾動)
+```c
+//int []a={1,2,3,4,5,6,7,8,9,10}//Java
+int []a=new int[49];
+void setup(){
+  size(400,200);
+  textSize(30);
+  for(int i=0;i<49;i++) a[i]=i+1;
+  for(int i=0;i<10000;i++){
+    int i1=(int) random(49),i2=(int)random(49);
+    int temp=a[i1];a[i1]=a[i2];a[i2]=temp;
+  }
+}
+int N=0, rolling=0;
+void draw(){
+  background(#2C9CF0);
+  for(int i=0;i<N;i++){
+    int x =50+i*50;
+    if(i==N-1 && rolling>0){
+      x+=rolling;
+      rolling-=3;
+    }
+    fill(255);
+    ellipse(x,100,40,40);
+    textAlign(CENTER,CENTER);
+    fill(0);
+    text(a[i],x,100);
+  }
+}
+void mousePressed(){
+  N++;
+  rolling=500;
+}
+```
+## 實習課
+## 奇數反流 
+```c
+#include <stdio.h>
+int main()
+{
+	int n,i,a[100];
+	scanf("%d",&n);
+	for(i=0;i<n;i++){
+		scanf("%d",&a[i]);
+	}
+	for(i=n-1;i>=0;i--){
+		if(a[i]%2==1)
+		printf("%d ",a[i]);
+	}
+	
+}
+```
+## 大位王 
+```c
+#include <stdio.h>
+int main()
+{
+	int c;
+	scanf("%d",&c);
+	if(c<0)c=-c;
+	while((c/10)>0){
+		c/=10;
+	}
+	printf("%d\n",c);
+}
+
+```
+## 輸入西元y年，判斷該y年是否為閏年
+```c
+include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	if(n%4==0 && n%1000!=0)
+		printf("%d is a leap year.\n",n);
+	else 
+		printf("%d is not a leap year.\n",n);
+}
+```
+## 把數字倒著印出來
+```c
+#include <stdio.h>
+int main()
+{
+	int a[10],i;
+	for(i=0;i<10;i++){
+		scanf("%d",&a[i]);
+	}
+	for(i=9;i>=0;i--){
+		printf("%d ",a[i]);
+	}
+}
+```
+## 區間測速 
+```c
+#include <stdio.h>
+int main()
+{
+	int i,a;
+	scanf("%d",&a);
+	int s=60*60*1.2/a;
+	printf("%d",s);
+}
+```
