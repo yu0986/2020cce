@@ -2012,6 +2012,7 @@ void mousePressed(){
 }
 ```
 ## 6.
+## http://127.0.0.1:8290/
 ```c
 function setup(){//設定 只做一次
   createCanvas(400,200);
