@@ -1961,6 +1961,7 @@ void draw(){
 }
 ```
 ## 3.
+## https://hackmd.io/CRq72E8QQS20PcnXRrV79w?view
 ```c
 import processing.sound.*;
 SoundFile player;//SoundFile是形狀,player是變名
@@ -2008,5 +2009,17 @@ void mousePressed(){
   }else{
     player.play();
   }
+}
+```
+## 6.
+```c
+function setup(){//設定 只做一次
+  createCanvas(400,200);
+  textSize(40);
+}
+function draw(){//畫圖,每秒60次
+  background(41,109,207);
+  let s = second();//秒鐘
+  text (s,100,100);
 }
 ```
