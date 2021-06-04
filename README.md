@@ -1936,7 +1936,7 @@ int main()
 ```
 ## week15
 ## 上課內容
-## 第一題
+## 1.
 ```c
 void setup(){//設定 只做一次
   size(400,200);
@@ -1948,7 +1948,7 @@ void draw(){//畫圖,每秒60次
   text (s,100,100);
 }
 ```
-## 第二題
+## 2.
 ```c
 void setup(){
   size(400,200);
@@ -1960,7 +1960,7 @@ void draw(){
   text(9-s%10,100,100);
 }
 ```
-## 第三題
+## 3.
 ```c
 import processing.sound.*;
 SoundFile player;//SoundFile是形狀,player是變名
