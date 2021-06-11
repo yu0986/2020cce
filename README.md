@@ -2232,21 +2232,76 @@ void draw(){
 ## 實習課
 ## 大於漸增數列總和之最小整數
 ```c
-
+#include <stdio.h>
+int main()
+{
+	int min,max,a;
+	scanf("%d",&a);
+	min=a;
+	max=a;
+	while(a!=0){
+		scanf("%d",&a);
+		if(min>a)min=a;
+		if(max<a)max=a;
+	}
+	printf("[%d,%d]",min,max);
+}
 ```
 ## 計算級數的值 
 ```c
-
+#include <stdio.h>
+int main()
+{
+	int n,i,sum=0;
+	scanf("%d",&n);
+	for(i=1;i<=(2*n+1);i+=2)
+		sum+=i;
+	printf("f(%d)=%d",n,sum);
+}
 ```
 ## 拆解輸入的正整數 
 ```c
-
+#include <stdio.h>
+int main()
+{
+	int n,i=1;
+	scanf("%d",&n);
+	while(n>0){
+		printf("%d ",(n%10)*i);
+		n/=10;
+		i*=10;
+	}
+}
 ```
 ## 計算一組任意數目的整數的總和
 ```c
-
+#include <stdio.h>
+int main()
+{
+	int sum=0,i,a;
+	scanf("%d",&a);
+	while(a!=0){
+		if(a>0)
+			sum+=a;
+		scanf("%d",&a);
+	}
+	printf("%d",sum);
+}
 ```
 ## 整數最大值、最小值
 ```c
-
+#include <stdio.h>
+int main()
+{
+	int min,max,a;
+	scanf("%d",&a);
+	min=a;
+	max=a;
+	while(a!=0){
+		scanf("%d",&a);
+		if(min>a)min=a;
+		if(max<a)max=a;
+	}
+	printf("[%d,%d]",min,max);
+}
 ```
