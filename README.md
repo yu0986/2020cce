@@ -2127,7 +2127,6 @@ void setup(){
   fill(255,0,0);
   textSize(40);
 }
-int degree=0;
 void draw(){
   background(57,255,127);
   arc(100,100,180,180,radians(90),radians(180));
