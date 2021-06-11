@@ -2120,3 +2120,16 @@ void draw(){//畫,每秒60次
   arc(100,100,180,180,0,stop);
 }//畫圓   圓心  寬 高
 ```
+## 第三題
+```c
+void setup(){
+  size(400,200);
+  fill(255,0,0);
+  textSize(40);
+}
+int degree=0;
+void draw(){
+  background(57,255,127);
+  arc(100,100,180,180,radians(90),radians(180));
+}
+```
