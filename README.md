@@ -2096,7 +2096,7 @@ int main()
 ## week16
 ## 上課內容
 ## 第一題
-```p
+```c
 void setup(){
   size(400,200);
 }
