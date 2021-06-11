@@ -2182,7 +2182,7 @@ void setup(){
 float shift=0,v=0;
 void mousePressed(){
   //v=random(10);//0...10.0
-  v = random(10)+5;
+  v = random(10)+5;//5...15.0
 }
 void draw(){
   background(57,255,127);
