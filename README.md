@@ -2378,3 +2378,26 @@ void keyPressed(){
   if(key==BACKSPACE)line = line.substring(0,len-1);
 }
 ```
+## 第五題
+## 解釋substring(開始,結束)的意思,很像for(int i=0;i小於26;i++)會做26次的右邊界不包含, 而且會有當機的問題,用len大於0來保護len不要變負的
+```c
+void setup(){
+  size(400,200);
+  textSize(40);
+}
+String line="";
+String Q="hello";
+void draw(){
+  background(0);
+  int len = line.length();
+  text(len,100,50);
+  text("Q: "+Q     ,100,100);
+  text("A: "+line  ,100,150);
+}
+void keyPressed(){
+  int len =line.length();
+  if(key>='a' && key<='z')line=line+key;//小寫
+  if(key>='A' && key<='Z')line=line+key;//大寫
+  if(key==BACKSPACE && len>0)line = line.substring(0,len-1);
+}
+```
