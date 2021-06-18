@@ -2357,3 +2357,24 @@ void keyPressed(){
   line = line+ key;
 }
 ```
+## 第四題
+## step02-2_如果key==BACKSPACE時,就要用 line = line.substring(0, len-1)來讓字串變短一點點,而 int len=line.length()會得到字串的原本長度, 還有要判斷小寫字母、大寫字母
+```c
+void setup(){
+  size(400,200);
+  textSize(40);
+}
+String line="";
+String Q="hello";
+void draw(){
+  background(0);
+  text("Q: "+Q     ,100,100);
+  text("A: "+line  ,100,150);
+}
+void keyPressed(){
+  int len =line.length();
+  if(key>='a' && key<='z')line=line+key;//小寫
+  if(key>='A' && key<='Z')line=line+key;//大寫
+  if(key==BACKSPACE)line = line.substring(0,len-1);
+}
+```
