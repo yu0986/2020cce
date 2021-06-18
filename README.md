@@ -2402,7 +2402,7 @@ void keyPressed(){
 }
 ```
 ## 第六題
-## 
+## 為了要算分數,我們在 keyPressed()裡,加入 if(key==ENTER) 去算分數。算分數要用字串比對 line.equals(Q)==true 成立時,score++, 否則 score-- 再印出分數
 ```c
 void setup(){
   size(400,200);
