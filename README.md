@@ -2305,3 +2305,35 @@ int main()
 	printf("[%d,%d]",min,max);
 }
 ```
+## week17
+## 上課內容
+## 第一題
+```c
+void setup(){
+  size(400,200);
+  textSize(40);
+}
+String line="world";
+void draw(){
+  background(0);
+  text("hello",100,100);
+  text( line  ,100,150);
+}
+```
+## 第二題
+```c
+void setup(){
+  size(400,200);
+  textSize(40);
+}
+String line="";
+String Q="hello";
+void draw(){
+  background(0);
+  text("Q:   "+Q     ,100,100);
+  text( "You:"+line  ,100,150);
+}
+void mousePressed(){
+  line = line+"a";
+}
+```
